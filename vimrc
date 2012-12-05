@@ -9,7 +9,7 @@
 
 let g:pathogen_disabled = []
 if !has('gui_running')
-   call add(g:pathogen_disabled, 'powerline')
+    call add(g:pathogen_disabled, 'powerline')
 endif
 
 call pathogen#runtime_append_all_bundles()
@@ -39,15 +39,18 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 
 if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
-  set background=dark 
-  set t_Co=256          " 256 color mode
-  set cursorline        " highlight current line
-  colors moria
-  highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
+    set guifont=Osaka-Mono:h20
+    set background=dark 
+    set t_Co=256          " 256 color mode
+    set cursorline        " highlight current line
+    colors moria
+    highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
 else
-" terminal color settings
-  colors vgod
+    " terminal color settings
+    set background=dark
+    set t_Co=256    "256 color mode
+    set cursorline  "highlight current line
+    colors railscasts
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
@@ -75,8 +78,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
+   set softtabstop=4
+   set shiftwidth=4
 
    au FileType Makefile set noexpandtab
 "}      							
@@ -289,16 +292,16 @@ let g:tex_flavor='latex'
 " --- AutoClose - Inserts matching bracket, paren, brace or quote 
 " fixed the arrow key problems caused by AutoClose
 if !has("gui_running")	
-   set term=linux
-   imap OA <ESC>ki
-   imap OB <ESC>ji
-   imap OC <ESC>li
-   imap OD <ESC>hi
+   set term=screen-256color
+   imap [A <ESC>ki
+   imap [B <ESC>ji
+   imap [C <ESC>li
+   imap [D <ESC>hi
 
-   nmap OA k
-   nmap OB j
-   nmap OC l
-   nmap OD h
+   nmap [A k
+   nmap [B j
+   nmap [C l
+   nmap [D h
 endif
 
 

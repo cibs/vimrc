@@ -1,3 +1,9 @@
+cibs's vimrc
+============
+This vimrc is forked from vgod's vimrc, below is his original README
+
+I keep it since I did not make a lot of change from his vimrc
+
 vgod's vimrc
 ============
 Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
