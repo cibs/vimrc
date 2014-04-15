@@ -48,9 +48,10 @@ if has("gui_running")	" GUI color and font settings
 else
     " terminal color settings
     set background=dark
-    set t_Co=256    "256 color mode
+    "set t_Co=256    "256 color mode
     set cursorline  "highlight current line
-    colors railscasts
+    let g:solarized_termcolors=256
+    colors solarized
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
