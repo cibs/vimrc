@@ -100,3 +100,6 @@
 [submodule "bundle/scala-vim-support"]
 	path = bundle/scala-vim-support
 	url = https://github.com/rosstimson/scala-vim-support.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
