@@ -83,7 +83,7 @@ set tm=500
    set shiftwidth=4
 
    autocmd FileType Makefile setlocal noexpandtab
-   autocmd FileType javascript,ls setlocal shiftwidth=2 softtabstop=2
+   autocmd FileType javascript,ls,jade,sass setlocal shiftwidth=2 softtabstop=2
 "}      							
 
 " status line {
